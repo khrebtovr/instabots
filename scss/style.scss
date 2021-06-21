@@ -1,0 +1,26 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: #808080;
+}
+
+@import "mixins.scss";
+@import "variables.scss";
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 24px;
+    margin: 0 auto;
+    .bg {
+        width: 100%;
+        // background: url(../img/bg-desktop.svg) center center no-repeat;
+        height: 100vh;
+        background: #000;
+    }
+}
