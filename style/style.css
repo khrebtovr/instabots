@@ -29,16 +29,9 @@ html {
 
 header {
   background: #fff;
+}
+header .header-content {
   padding: 16px 32px;
-}
-header .logo a {
-  font-size: 18px;
-  line-height: 135%;
-  font-weight: 400;
-  color: #4754EB;
-  font-weight: 500;
-}
-header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +48,14 @@ header .nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-header .nav .nav__menu .nav__list {
+header .header-content .logo a {
+  font-size: 18px;
+  line-height: 135%;
+  font-weight: 400;
+  color: #4754EB;
+  font-weight: 500;
+}
+header .header-content .nav__items .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,26 +72,26 @@ header .nav .nav__menu .nav__list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-header .nav .nav__menu .nav__list li {
+header .header-content .nav__items .nav__list li {
   margin-right: 24px;
 }
-header .nav .nav__menu .nav__list li a {
+header .header-content .nav__items .nav__list li a {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
   color: #808080;
 }
-header .nav .switchlan p {
+header .header-content .switchlan p {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
   color: #808080;
 }
-header .nav .switchlan p span {
+header .header-content .switchlan p span {
   color: #4754EB;
   font-weight: 500;
 }
-header .nav button {
+header .header-content button {
   padding: 0;
   border: none;
   font: inherit;
@@ -108,7 +108,7 @@ header .nav button {
   color: #fff;
 }
 
-.offer {
+.offer .offer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,26 +124,26 @@ header .nav button {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 80px 31px 138px;
+  padding: 80px 32px 138px;
   position: relative;
 }
-.offer .offer__data {
+.offer .offer-content .offer__data {
   -ms-flex-preferred-size: 500px;
       flex-basis: 500px;
 }
-.offer .offer__data h1 {
+.offer .offer-content .offer__data h1 {
   font-weight: 500;
   font-size: 56px;
   line-height: 125%;
   color: #1A1A1A;
   display: inline;
 }
-.offer .offer__data form {
+.offer .offer-content .offer__data form {
   margin-top: 40px;
   position: relative;
   display: inline-block;
 }
-.offer .offer__data form input {
+.offer .offer-content .offer__data form input {
   border: none;
   background: none;
   outline: none;
@@ -157,7 +157,7 @@ header .nav button {
   font-weight: 400;
   color: #808080;
 }
-.offer .offer__data form button {
+.offer .offer-content .offer__data form button {
   padding: 0;
   border: none;
   font: inherit;
@@ -177,7 +177,7 @@ header .nav button {
   top: 8px;
   right: 8px;
 }
-.offer .offer__data p {
+.offer .offer-content .offer__data p {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
@@ -186,21 +186,21 @@ header .nav button {
   margin-top: 16px;
   display: inline-block;
 }
-.offer .offer__data p a {
+.offer .offer-content .offer__data p a {
   color: #4754EB;
 }
-.offer .offer__pic {
+.offer .offer-content .offer__pic {
   width: 50%;
 }
-.offer .offer__pic img {
+.offer .offer-content .offer__pic img {
   width: 100%;
 }
-.offer .btn__next {
+.offer .offer-content .btn__next {
   position: absolute;
   bottom: 80px;
   left: 63px;
 }
-.offer .btn__next p {
+.offer .offer-content .btn__next p {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
@@ -208,7 +208,7 @@ header .nav button {
   font-size: 16px;
   position: relative;
 }
-.offer .btn__next p::before {
+.offer .offer-content .btn__next p::before {
   content: "";
   position: absolute;
   background: url(../img/Wheeldown.svg);
@@ -220,17 +220,19 @@ header .nav button {
 }
 
 .advantage {
-  padding: 80px 24px;
   background: #fff;
 }
-.advantage h3 {
+.advantage .advantage-content {
+  padding: 80px 0;
+}
+.advantage .advantage-content h3 {
   font-weight: 500;
   font-size: 36px;
   line-height: 125%;
   color: #1A1A1A;
-  margin-left: 56px;
+  margin-left: 32px;
 }
-.advantage .advantage__content {
+.advantage .advantage-content .advantage__content {
   margin-top: 40px;
   display: -ms-grid;
   display: grid;
@@ -238,7 +240,7 @@ header .nav button {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
-.advantage .advantage__content .advantage__item {
+.advantage .advantage-content .advantage__content .advantage__item {
   background: #FAFAFA;
   -webkit-box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
           box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
@@ -246,7 +248,7 @@ header .nav button {
   border: 1px solid;
   border-image-source: linear-gradient(243.82deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
 }
-.advantage .advantage__content .advantage__item .item-head {
+.advantage .advantage-content .advantage__content .advantage__item .item-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,7 +267,7 @@ header .nav button {
   padding: 8px 16px;
   background: rgba(255, 255, 255, 0.5);
 }
-.advantage .advantage__content .advantage__item .item-head p {
+.advantage .advantage-content .advantage__content .advantage__item .item-head p {
   margin-left: 12px;
   font-size: 18px;
   line-height: 135%;
@@ -273,10 +275,10 @@ header .nav button {
   color: 24px;
   font-weight: 500;
 }
-.advantage .advantage__content .advantage__item .item-body {
+.advantage .advantage-content .advantage__content .advantage__item .item-body {
   padding: 16px 24px 24px 24px;
 }
-.advantage .advantage__content .advantage__item .item-body p {
+.advantage .advantage-content .advantage__content .advantage__item .item-body p {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
@@ -284,17 +286,16 @@ header .nav button {
   font-size: 18px;
 }
 
-.info-work {
-  padding: 80px 56px;
+.info-work .info-work-content {
+  padding: 80px 32px;
 }
-.info-work h3 {
+.info-work .info-work-content h3 {
   font-weight: 500;
   font-size: 36px;
   line-height: 125%;
   color: #1A1A1A;
-  margin-left: 56px;
 }
-.info-work .info-work__content {
+.info-work .info-work-content .info-work__content {
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,36 +314,36 @@ header .nav button {
       flex-wrap: wrap;
   gap: 24px;
 }
-.info-work .info-work__content .info-work__image {
+.info-work .info-work-content .info-work__content .info-work__image {
   width: 49%;
 }
-.info-work .info-work__content .info-work__image img {
+.info-work .info-work-content .info-work__content .info-work__image img {
   width: 100%;
 }
-.info-work .info-work__content .info-work__block {
+.info-work .info-work-content .info-work__content .info-work__block {
   -ms-flex-preferred-size: 470px;
       flex-basis: 470px;
 }
-.info-work .info-work__content .info-work__block .block__item {
+.info-work .info-work-content .info-work__content .info-work__block .block__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.info-work .info-work__content .info-work__block .block__item p {
+.info-work .info-work-content .info-work__content .info-work__block .block__item p {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
   color: 18px;
   position: relative;
 }
-.info-work .info-work__content .info-work__block .block__item p:not(:last-child) {
+.info-work .info-work-content .info-work__content .info-work__block .block__item p:not(:last-child) {
   margin-right: 56px;
 }
-.info-work .info-work__content .info-work__block .block__item p:first-child {
+.info-work .info-work-content .info-work__content .info-work__block .block__item p:first-child {
   color: #4754EB;
   font-weight: 500;
 }
-.info-work .info-work__content .info-work__block .block__item p:not(:last-child)::after {
+.info-work .info-work-content .info-work__content .info-work__block .block__item p:not(:last-child)::after {
   position: absolute;
   content: "";
   width: 24px;
@@ -351,26 +352,26 @@ header .nav button {
   top: 12px;
   left: 120px;
 }
-.info-work .info-work__content .info-work__block h4 {
+.info-work .info-work-content .info-work__content .info-work__block h4 {
   font-weight: 500;
   font-size: 36px;
   line-height: 125%;
   color: #1A1A1A;
   margin-top: 30px;
 }
-.info-work .info-work__content .info-work__block .item-body p {
+.info-work .info-work-content .info-work__content .info-work__block .item-body p {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
   color: #808080;
   margin-top: 16px;
 }
-.info-work .info-work__content .info-work__block .item-body p:first-child {
+.info-work .info-work-content .info-work__content .info-work__block .item-body p:first-child {
   color: #4754EB;
   font-weight: 500;
   margin-bottom: 24px;
 }
-.info-work .info-work__content button {
+.info-work .info-work-content .info-work__content button {
   padding: 0;
   border: none;
   font: inherit;
@@ -400,16 +401,16 @@ header .nav button {
   font-size: 36px;
   line-height: 125%;
   color: #1A1A1A;
-  margin-left: 56px;
+  margin-left: 32px;
 }
 .tarrifs .tarrifs__content .tarrifs__info {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(318px, 324px));
-  grid-gap: 24px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: repeat(auto-fit, 324px);
+  grid-gap: 16px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 40px;
 }
 .tarrifs .tarrifs__content .tarrifs__info .tarrifs-item {
@@ -623,4 +624,12 @@ header .nav button {
   height: 32px;
   left: -48px;
   top: -1px;
+}
+
+.reviews .reviews-content h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 125%;
+  color: #1A1A1A;
+  margin-left: 72px;
 }

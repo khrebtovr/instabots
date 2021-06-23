@@ -29,16 +29,16 @@ html {
 
 header {
     background: #fff;
-    padding: 16px 32px;
-    .logo {
-        a {
-            @include text(#4754EB);
-            font-weight: 500;
+    .header-content {
+        padding: 16px 32px;
+        .logo {
+            a {
+                @include text(#4754EB);
+                font-weight: 500;
+            }
         }
-    }
-    .nav {
         @include flex($justify: space-between);
-        .nav__menu {
+        .nav__items {
             .nav__list {
                 @include flex();
                 li {
@@ -66,108 +66,112 @@ header {
 }
 
 .offer {
-    @include flex(space-between);
-    padding: 80px 31px 138px;
-    position: relative;
-    .offer__data {
-        flex-basis: 500px;
-        h1 {
-            @include heading(56px);
-            display: inline;
-        }
-        form {
-            margin-top: 40px;
-            position: relative;
-            display: inline-block;
-            input {
-                @include input-reset();
-                padding: 20px 16px;
-                background: rgba(255, 255, 255, 0.5);
-                border-radius: 16px;
-                width: 465px;
-                @include text($coltext);
+    .offer-content {
+        @include flex(space-between);
+        padding: 80px 32px 138px;
+        position: relative;
+        .offer__data {
+            flex-basis: 500px;
+            h1 {
+                @include heading(56px);
+                display: inline;
             }
-            button {
-                @include button-reset(#fff);
-                position: absolute;
-                @include text($blue);
-                font-weight: 500;
-                top: 8px;
-                right: 8px;
+            form {
+                margin-top: 40px;
+                position: relative;
+                display: inline-block;
+                input {
+                    @include input-reset();
+                    padding: 20px 16px;
+                    background: rgba(255, 255, 255, 0.5);
+                    border-radius: 16px;
+                    width: 465px;
+                    @include text($coltext);
+                }
+                button {
+                    @include button-reset(#fff);
+                    position: absolute;
+                    @include text($blue);
+                    font-weight: 500;
+                    top: 8px;
+                    right: 8px;
+                }
+            }
+            p {
+                @include text(#595959);
+                font-size: 12px;
+                margin-top: 16px;
+                display: inline-block;
+                a {
+                    color: $blue;
+                }
             }
         }
-        p {
-            @include text(#595959);
-            font-size: 12px;
-            margin-top: 16px;
-            display: inline-block;
-            a {
-                color: $blue;
+        .offer__pic {
+            width: 50%;
+            img {
+                // max-width: 628px;
+                width: 100%;
             }
         }
-    }
-    .offer__pic {
-        width: 50%;
-        img {
-            // max-width: 628px;
-            width: 100%;
-        }
-    }
-    .btn__next {
-        position: absolute;
-        bottom: 80px;
-        left: 63px;
-        p {
-            @include text(#fff);
-            font-size: 16px;
-            position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                background: url(../img/Wheeldown.svg);
-                background-repeat: no-repeat;
-                height: 32px;
-                width: 24px;
-                top: -6px;
-                left: -32px;
+        .btn__next {
+            position: absolute;
+            bottom: 80px;
+            left: 63px;
+            p {
+                @include text(#fff);
+                font-size: 16px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background: url(../img/Wheeldown.svg);
+                    background-repeat: no-repeat;
+                    height: 32px;
+                    width: 24px;
+                    top: -6px;
+                    left: -32px;
+                }
             }
         }
     }
 }
 
 .advantage {
-    padding: 80px 24px;
     background: #fff;
-    h3 {
-        @include heading(36px);
-        margin-left: 56px;
-    }
-    .advantage__content {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 16px;
-        .advantage__item {
-            background: #FAFAFA;
-            box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
-            border-radius: 24px;
-            border: 1px solid;
-            border-image-source: linear-gradient(243.82deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
-            .item-head {
-                @include flex(start);
-                padding: 8px 16px;
-                background: rgba(255, 255, 255, 0.5);
-                p {
-                    margin-left: 12px;
-                    @include text(24px);
-                    font-weight: 500;
+    .advantage-content {
+        padding: 80px 0;
+        h3 {
+            @include heading(36px);
+            margin-left: 32px;
+        }
+        .advantage__content {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 16px;
+            .advantage__item {
+                background: #FAFAFA;
+                box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+                border-radius: 24px;
+                border: 1px solid;
+                border-image-source: linear-gradient(243.82deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
+                .item-head {
+                    @include flex(start);
+                    padding: 8px 16px;
+                    background: rgba(255, 255, 255, 0.5);
+                    p {
+                        margin-left: 12px;
+                        @include text(24px);
+                        font-weight: 500;
+                    }
                 }
-            }
-            .item-body {
-                padding: 16px 24px 24px 24px;
-                p {
-                    @include text($coltext);
-                    font-size: 18px;
+                .item-body {
+                    padding: 16px 24px 24px 24px;
+                    p {
+                        @include text($coltext);
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -175,67 +179,68 @@ header {
 }
 
 .info-work {
-    padding: 80px 56px;
-    h3 {
-        @include heading(36px);
-        margin-left: 56px;
-    }
-    .info-work__content {
-        margin-top: 40px;
-        @include flex(start);
-        gap: 24px;
-        .info-work__image {
-            width: 49%;
-            img {
-                width: 100%;
-            }
+    .info-work-content {
+        padding: 80px 32px;
+        h3 {
+            @include heading(36px);
         }
-        .info-work__block {
-            flex-basis: 470px;
-            .block__item {
-                display: flex;
-                p {
-                    @include text(18px);
-                    position: relative;
-                    &:not(:last-child) {
-                        margin-right: 56px;
+        .info-work__content {
+            margin-top: 40px;
+            @include flex(start);
+            gap: 24px;
+            .info-work__image {
+                width: 49%;
+                img {
+                    width: 100%;
+                }
+            }
+            .info-work__block {
+                flex-basis: 470px;
+                .block__item {
+                    display: flex;
+                    p {
+                        @include text(18px);
+                        position: relative;
+                        &:not(:last-child) {
+                            margin-right: 56px;
+                        }
+                        &:first-child {
+                            color: $blue;
+                            font-weight: 500;
+                        }
+                        &:not(:last-child)::after {
+                            position: absolute;
+                            content: '';
+                            width: 24px;
+                            height: 1px;
+                            background: #fff;
+                            top: 12px;
+                            left: 120px;
+                        }
                     }
-                    &:first-child {
-                        color: $blue;
-                        font-weight: 500;
-                    }
-                    &:not(:last-child)::after {
-                        position: absolute;
-                        content: '';
-                        width: 24px;
-                        height: 1px;
-                        background: #fff;
-                        top: 12px;
-                        left: 120px;
+                }
+                h4 {
+                    @include heading(36px);
+                    margin-top: 30px;
+                }
+                .item-body {
+                    p {
+                        @include text($coltext);
+                        margin-top: 16px;
+                        &:first-child {
+                            color: $blue;
+                            font-weight: 500;
+                            margin-bottom: 24px;
+                        }
                     }
                 }
             }
-            h4 {
-                @include heading(36px);
-                margin-top: 30px;
+            button {
+                @include button-reset($blue);
+                font-size: 18px;
+                @include text(#fff);
+                margin-top: 56px;
             }
-            .item-body {
-                p {
-                    @include text($coltext);
-                    margin-top: 16px;
-                    &:first-child {
-                        color: $blue;
-                        font-weight: 500;
-                        margin-bottom: 24px;
-                    }
-                }
-            }
-        }
-        button {
-            @include button-reset($blue);
-            font-size: 18px;
-            @include text(#fff);
-            margin-top: 56px;
         }
     }
 }
@@ -246,13 +251,13 @@ header {
         padding: 80px 0;
         h3 {
             @include heading(36px);
-            margin-left: 56px;
+            margin-left: 32px;
         }
         .tarrifs__info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(318px, 324px));
-            grid-gap: 24px;
-            justify-content: center;
+            grid-template-columns: repeat(auto-fit, 324px);
+            grid-gap: 16px;
+            justify-content: start;
             margin-top: 40px;
             .tarrifs-item {
                 background: #FAFAFA;
@@ -459,6 +464,15 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+.reviews {
+    .reviews-content {
+        h3 {
+            @include heading(36px);
+            margin-left: 72px;
         }
     }
 }
