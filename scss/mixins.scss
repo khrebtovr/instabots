@@ -1,8 +1,9 @@
-@mixin flex($justify, $align, $direction) {
+@mixin flex($justify: center, $align: center, $direction: row) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
     flex-direction: $direction;
+    flex-wrap: wrap;
 }
 
 @mixin text($color) {
@@ -10,4 +11,31 @@
     line-height: 135%;
     font-weight: 400;
     color: $color;
+}
+
+@mixin heading($size) {
+    font-weight: 500;
+    font-size: $size;
+    line-height: 125%;
+    color: $black;
+}
+
+@mixin button-reset($btnbg) {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 12px 24px;
+    background: $btnbg;
+    border-radius: 16px;
+    font-weight: 500;
+}
+
+@mixin input-reset {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
 }
