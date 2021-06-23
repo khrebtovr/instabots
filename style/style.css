@@ -189,8 +189,10 @@ header .nav button {
 .offer .offer__data p a {
   color: #4754EB;
 }
+.offer .offer__pic {
+  width: 50%;
+}
 .offer .offer__pic img {
-  max-width: 628px;
   width: 100%;
 }
 .offer .btn__next {
@@ -290,6 +292,7 @@ header .nav button {
   font-size: 36px;
   line-height: 125%;
   color: #1A1A1A;
+  margin-left: 56px;
 }
 .info-work .info-work__content {
   margin-top: 40px;
@@ -310,9 +313,15 @@ header .nav button {
       flex-wrap: wrap;
   gap: 24px;
 }
+.info-work .info-work__content .info-work__image {
+  width: 49%;
+}
+.info-work .info-work__content .info-work__image img {
+  width: 100%;
+}
 .info-work .info-work__content .info-work__block {
-  -ms-flex-preferred-size: 500px;
-      flex-basis: 500px;
+  -ms-flex-preferred-size: 470px;
+      flex-basis: 470px;
 }
 .info-work .info-work__content .info-work__block .block__item {
   display: -webkit-box;
@@ -324,14 +333,16 @@ header .nav button {
   line-height: 135%;
   font-weight: 400;
   color: 18px;
-  margin-right: 56px;
   position: relative;
+}
+.info-work .info-work__content .info-work__block .block__item p:not(:last-child) {
+  margin-right: 56px;
 }
 .info-work .info-work__content .info-work__block .block__item p:first-child {
   color: #4754EB;
   font-weight: 500;
 }
-.info-work .info-work__content .info-work__block .block__item p::after {
+.info-work .info-work__content .info-work__block .block__item p:not(:last-child)::after {
   position: absolute;
   content: "";
   width: 24px;
@@ -340,19 +351,24 @@ header .nav button {
   top: 12px;
   left: 120px;
 }
-.info-work .info-work__content .info-work__block h3 {
+.info-work .info-work__content .info-work__block h4 {
   font-weight: 500;
   font-size: 36px;
   line-height: 125%;
   color: #1A1A1A;
   margin-top: 30px;
 }
-.info-work .info-work__content .info-work__block p {
+.info-work .info-work__content .info-work__block .item-body p {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
   color: #808080;
   margin-top: 16px;
+}
+.info-work .info-work__content .info-work__block .item-body p:first-child {
+  color: #4754EB;
+  font-weight: 500;
+  margin-bottom: 24px;
 }
 .info-work .info-work__content button {
   padding: 0;
@@ -370,5 +386,241 @@ header .nav button {
   line-height: 135%;
   font-weight: 400;
   color: #fff;
-  margin-top: 87px;
+  margin-top: 56px;
+}
+
+.tarrifs {
+  background: #fff;
+}
+.tarrifs .tarrifs__content {
+  padding: 80px 0;
+}
+.tarrifs .tarrifs__content h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 125%;
+  color: #1A1A1A;
+  margin-left: 56px;
+}
+.tarrifs .tarrifs__content .tarrifs__info {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(318px, 324px));
+  grid-gap: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item {
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+          box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+  border-radius: 24px;
+  border: 1px solid;
+  border-image-source: linear-gradient(243.82deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-head {
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-head p {
+  font-size: 18px;
+  line-height: 135%;
+  font-weight: 400;
+  color: #808080;
+  font-weight: 500;
+  font-size: 24px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-head p:first-child {
+  color: #1A1A1A;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-head p span {
+  color: #4754EB;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-body {
+  padding: 24px 22px 0 72px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-body p {
+  font-size: 18px;
+  line-height: 135%;
+  font-weight: 400;
+  color: #808080;
+  font-size: 18px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-body p:not(:last-child) {
+  margin-bottom: 16px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-footer {
+  padding: 24px 34px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-footer button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 12px 24px;
+  background: #fff;
+  border-radius: 16px;
+  font-weight: 500;
+  padding: 16px 57.5px;
+  color: #4754EB;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-one p {
+  position: relative;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-one p:first-child:before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-one p:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/uncheck.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-one p:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/uncheck.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-one p:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/uncheck.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-two p {
+  position: relative;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-two p:first-child:before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-two p:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-two p:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/uncheck.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-two p:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/uncheck.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-three p {
+  position: relative;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-three p:first-child:before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-three p:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-three p:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-three p:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/uncheck.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-four p {
+  position: relative;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-four p:first-child:before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-four p:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-four p:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
+}
+.tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .img-four p:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  background: url(../img/check.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  left: -48px;
+  top: -1px;
 }

@@ -107,8 +107,9 @@ header {
         }
     }
     .offer__pic {
+        width: 50%;
         img {
-            max-width: 628px;
+            // max-width: 628px;
             width: 100%;
         }
     }
@@ -177,24 +178,33 @@ header {
     padding: 80px 56px;
     h3 {
         @include heading(36px);
+        margin-left: 56px;
     }
     .info-work__content {
         margin-top: 40px;
         @include flex(start);
         gap: 24px;
+        .info-work__image {
+            width: 49%;
+            img {
+                width: 100%;
+            }
+        }
         .info-work__block {
-            flex-basis: 500px;
+            flex-basis: 470px;
             .block__item {
                 display: flex;
                 p {
                     @include text(18px);
-                    margin-right: 56px;
                     position: relative;
+                    &:not(:last-child) {
+                        margin-right: 56px;
+                    }
                     &:first-child {
                         color: $blue;
                         font-weight: 500;
                     }
-                    &::after {
+                    &:not(:last-child)::after {
                         position: absolute;
                         content: '';
                         width: 24px;
@@ -205,20 +215,250 @@ header {
                     }
                 }
             }
-            h3 {
+            h4 {
                 @include heading(36px);
                 margin-top: 30px;
             }
-            p {
-                @include text($coltext);
-                margin-top: 16px;
+            .item-body {
+                p {
+                    @include text($coltext);
+                    margin-top: 16px;
+                    &:first-child {
+                        color: $blue;
+                        font-weight: 500;
+                        margin-bottom: 24px;
+                    }
+                }
             }
         }
         button {
             @include button-reset($blue);
             font-size: 18px;
             @include text(#fff);
-            margin-top: 87px;
+            margin-top: 56px;
+        }
+    }
+}
+
+.tarrifs {
+    background: #fff;
+    .tarrifs__content {
+        padding: 80px 0;
+        h3 {
+            @include heading(36px);
+            margin-left: 56px;
+        }
+        .tarrifs__info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(318px, 324px));
+            grid-gap: 24px;
+            justify-content: center;
+            margin-top: 40px;
+            .tarrifs-item {
+                background: #FAFAFA;
+                box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+                border-radius: 24px;
+                border: 1px solid;
+                border-image-source: linear-gradient(243.82deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
+                .item-head {
+                    // @include flex(start);
+                    padding: 20px 24px;
+                    background: rgba(255, 255, 255, 0.5);
+                    p {
+                        @include text($coltext);
+                        font-weight: 500;
+                        font-size: 24px;
+                        &:first-child {
+                            color: $black;
+                        }
+                        span {
+                            color: $blue;
+                        }
+                    }
+                }
+                .item-body {
+                    padding: 24px 22px 0 72px;
+                    p {
+                        @include text($coltext);
+                        font-size: 18px;
+                        &:not(:last-child) {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+                .item-footer {
+                    padding: 24px 34px;
+                    button {
+                        @include button-reset(#fff);
+                        padding: 16px 57.5px;
+                        color: $blue;
+                    }
+                }
+                .img-one {
+                    p {
+                        position: relative;
+                        &:first-child:before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(2)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/uncheck.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(3)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/uncheck.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(4)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/uncheck.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                    }
+                }
+                .img-two {
+                    p {
+                        position: relative;
+                        &:first-child:before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(2)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(3)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/uncheck.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(4)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/uncheck.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                    }
+                }
+                .img-three {
+                    p {
+                        position: relative;
+                        &:first-child:before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(2)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(3)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(4)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/uncheck.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                    }
+                }
+                .img-four {
+                    p {
+                        position: relative;
+                        &:first-child:before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(2)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(3)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                        &:nth-child(4)::before {
+                            content: '';
+                            position: absolute;
+                            background: url(../img/check.svg) center center no-repeat;
+                            width: 32px;
+                            height: 32px;
+                            left: -48px;
+                            top: -1px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
