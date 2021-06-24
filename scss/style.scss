@@ -67,7 +67,7 @@ header {
 
 .offer {
     .offer-content {
-        @include flex(space-between);
+        @include flex(space-around);
         padding: 80px 32px 138px;
         position: relative;
         .offer__data {
@@ -470,9 +470,137 @@ header {
 
 .reviews {
     .reviews-content {
+        padding: 80px 32px;
+        position: relative;
         h3 {
             @include heading(36px);
             margin-left: 72px;
+        }
+        .reviews-items {
+            margin-top: 40px;
+            @include flex(space-between);
+            // position: relative;
+            .reviews-item {
+                background: rgba(255, 255, 255, 0.5);
+                box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
+                border-radius: 16px;
+                width: 628px;
+                max-width: 100%;
+                min-width: 343px;
+                margin-bottom: 24px;
+                position: relative;
+                .head-item {
+                    background: rgba(255, 255, 255, 0.5);
+                    border-radius: 16px 16px 0px 0px;
+                    @include flex(space-between);
+                    padding: 16px 25px 16px 16px;
+                    .head-left {
+                        @include flex;
+                        img {
+                            border-radius: 50%;
+                            margin-right: 16px;
+                        }
+                        p {
+                            @include heading(24px);
+                        }
+                    }
+                    .head-right {
+                        p {
+                            @include text($coltext);
+                        }
+                    }
+                }
+                .item-body {
+                    padding: 16px 24px;
+                    p {
+                        @include text($coltext);
+                    }
+                }
+                .item-footer {
+                    padding: 0 0 16px 24px;
+                }
+            }
+            // .remove-one {
+            //     top: 150px;
+            //     left: 350px;
+            // }
+            // .remove-two {
+            //     top: -150px;
+            //     left: -350px;
+            // }
+            // .remove-three {
+            //     top: -200px;
+            //     left: 550px;
+            // }
+            // .remove-four {
+            //     top: -100px;
+            //     left: -450px;
+            // }
+        }
+        // .classtrue {
+        //     top: 0 !important;
+        //     left: 0 !important;
+        // }
+        .btn {
+            text-align: right;
+            button {
+                @include button-reset(#fff);
+                color: $blue;
+                padding: 16px 24px;
+            }
+        }
+    }
+}
+
+.sale {
+    background: #fff;
+    .sale-content {
+        @include flex(start);
+        padding: 60px 0 60px;
+        position: relative;
+        .sale__data {
+            flex-basis: 500px;
+            h3 {
+                @include heading(56px);
+                display: inline;
+            }
+            form {
+                margin-top: 40px;
+                position: relative;
+                display: inline-block;
+                input {
+                    @include input-reset();
+                    padding: 20px 16px;
+                    background: #F2F2F2;
+                    border-radius: 16px;
+                    width: 465px;
+                    @include text($coltext);
+                }
+                button {
+                    @include button-reset($blue);
+                    position: absolute;
+                    @include text(#fff);
+                    font-weight: 500;
+                    top: 8px;
+                    right: 8px;
+                }
+            }
+            p {
+                @include text(#595959);
+                font-size: 12px;
+                margin-top: 16px;
+                display: inline-block;
+                a {
+                    color: $blue;
+                }
+            }
+        }
+        .sale__pic {
+            width: 50%;
+            img {
+                max-width: 628px;
+                width: 100%;
+            }
         }
     }
 }
