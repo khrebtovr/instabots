@@ -24,14 +24,94 @@ html {
 }
 
 .container {
-    max-width: 1344px;
+    max-width: 1392px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 header {
     background: #fff;
     .header-content {
         padding: 16px 32px;
+        .hamburger-menu {
+            display: none;
+            #menu__toggle {
+                opacity: 0;
+                &:checked~.menu__btn>span {
+                    transform: rotate(45deg);
+                }
+                &:checked~.menu__btn>span::before {
+                    top: 0;
+                    transform: rotate(0);
+                }
+                &:checked~.menu__btn>span::after {
+                    top: 0;
+                    transform: rotate(90deg);
+                }
+                &:checked~.menu__box {
+                    visibility: visible;
+                    right: 0;
+                }
+            }
+            .menu__btn {
+                display: flex;
+                align-items: center;
+                position: fixed;
+                right: 40px;
+                top: 60px;
+                width: 50px;
+                height: 35px;
+                cursor: pointer;
+                z-index: 1000;
+                &>span,
+                &>span::before,
+                &>span::after {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #616161;
+                    transition-duration: .25s;
+                }
+                &>span::before {
+                    content: '';
+                    top: -10px;
+                }
+                &>span::after {
+                    content: '';
+                    top: 10px;
+                }
+            }
+            .menu__box {
+                z-index: 100;
+                display: block;
+                position: fixed;
+                visibility: hidden;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                padding: 140px 0;
+                list-style: none;
+                background-color: #ECEFF1;
+                box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+                transition-duration: .25s;
+                .menu__item {
+                    display: block;
+                    padding: 15px 45px;
+                    color: #333;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition-duration: .25s;
+                    &:hover {
+                        background-color: #CFD8DC;
+                    }
+                }
+            }
+        }
         .logo {
             a {
                 @include text(#4754EB);
@@ -68,7 +148,7 @@ header {
 
 .offer {
     .offer-content {
-        @include flex(space-around);
+        @include flex(space-between);
         padding: 80px 32px 138px;
         position: relative;
         .offer__data {
@@ -472,7 +552,8 @@ header {
 .reviews {
     .reviews-content {
         padding: 80px 32px;
-        position: relative;
+        // position: relative;
+        overflow: hidden;
         h3 {
             @include heading(36px);
         }
@@ -520,20 +601,20 @@ header {
                 }
             }
             .remove-one {
-                top: 150px;
-                left: 350px;
+                top: 20%;
+                left: 10%;
             }
             .remove-two {
-                top: -150px;
-                left: -350px;
+                top: -15%;
+                left: -35%;
             }
             .remove-three {
-                top: -200px;
-                left: 550px;
+                top: 30%;
+                left: 35%;
             }
             .remove-four {
-                top: -100px;
-                left: -450px;
+                top: -10%;
+                left: -45%;
             }
         }
         .classtrue {
@@ -555,7 +636,7 @@ header {
     background: #fff;
     .sale-content {
         @include flex(start);
-        padding: 60px 0 60px;
+        padding: 60px 32px 60px;
         position: relative;
         .sale__data {
             flex-basis: 500px;
@@ -657,7 +738,7 @@ header {
 .feedback {
     background: #fff;
     .feedback-content {
-        @include flex(space-evenly);
+        @include flex(space-around);
         padding: 80px 32px;
         .feedback-form {
             h3 {
