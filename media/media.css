@@ -1,0 +1,51 @@
+@media screen and (max-width: 1024px) {
+    .nav__items {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block !important;
+    }
+    .offer-content {
+        padding: 40px 32px !important;
+    }
+    .offer__pic {
+        width: 80% !important;
+    }
+    .btn__next {
+        display: none;
+    }
+    .advantage__content {
+        grid-template-columns: 1fr !important;
+    }
+    .info-work__image {
+        width: 90% !important;
+    }
+    .info-work__block {
+        margin-top: 40px;
+        flex-basis: 100% !important;
+    }
+    .tarrifs__info {
+        justify-content: space-around !important;
+    }
+    .reviews-item {
+        width: 100% !important;
+    }
+    .sale__pic {
+        width: 90% !important;
+    }
+    .sale__data {
+        margin-top: 50px;
+    }
+    .feedback-content {
+        justify-content: start !important;
+    }
+    .feedback-form {
+        width: 100%;
+    }
+    .feedback-form input {
+        width: 100% !important;
+    }
+    .feedback-img {
+        display: none;
+    }
+}
