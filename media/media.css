@@ -1,6 +1,15 @@
 @media screen and (max-width: 1024px) {
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
     .nav__items {
         display: none;
+    }
+    .logo {
+        margin-left: 32px;
     }
     .hamburger-menu {
         display: block !important;
@@ -10,6 +19,7 @@
     }
     .offer__pic {
         width: 80% !important;
+        margin: auto;
     }
     .btn__next {
         display: none;
@@ -19,6 +29,7 @@
     }
     .info-work__image {
         width: 90% !important;
+        /* margin: auto; */
     }
     .info-work__block {
         margin-top: 40px;
@@ -32,6 +43,7 @@
     }
     .sale__pic {
         width: 90% !important;
+        margin: auto;
     }
     .sale__data {
         margin-top: 50px;

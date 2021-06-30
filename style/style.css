@@ -133,6 +133,12 @@ header .header-content .header-content__left .hamburger-menu .menu__box {
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
 }
+header .header-content .header-content__left .hamburger-menu .menu__box li {
+  margin-bottom: 24px;
+}
+header .header-content .header-content__left .hamburger-menu .menu__box li:first-child {
+  margin-bottom: 40px;
+}
 header .header-content .header-content__left .hamburger-menu .menu__box li:first-child a {
   font-size: 24px;
   font-weight: 500;
@@ -140,7 +146,6 @@ header .header-content .header-content__left .hamburger-menu .menu__box li:first
 }
 header .header-content .header-content__left .hamburger-menu .menu__box li .menu__item {
   display: block;
-  padding: 15px 45px;
   font-weight: 500;
   font-size: 56px;
   line-height: 125%;
@@ -151,9 +156,6 @@ header .header-content .header-content__left .hamburger-menu .menu__box li .menu
 }
 header .header-content .header-content__left .hamburger-menu .menu__box li .menu__item:hover {
   color: #4754EB;
-}
-header .header-content .header-content__left .logo {
-  margin-left: 32px;
 }
 header .header-content .header-content__left .logo a {
   font-size: 18px;
@@ -187,16 +189,6 @@ header .header-content .nav__items .nav__list li a {
   line-height: 135%;
   font-weight: 400;
   color: #808080;
-}
-header .header-content .switchlan p {
-  font-size: 18px;
-  line-height: 135%;
-  font-weight: 400;
-  color: #808080;
-}
-header .header-content .switchlan p span {
-  color: #4754EB;
-  font-weight: 500;
 }
 header .header-content button {
   padding: 0;
@@ -988,7 +980,6 @@ header .header-content button {
   cursor: pointer;
   padding: 28px 32px;
   width: 100%;
-  text-align: left;
   border: none;
   outline: none;
   -webkit-transition: 0.4s;
@@ -1060,7 +1051,7 @@ header .header-content button {
 }
 .feedback .feedback-content .feedback-form h3 {
   font-weight: 500;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 125%;
   color: #1A1A1A;
   margin-bottom: 16px;
@@ -1180,12 +1171,12 @@ header .header-content button {
   font-size: 16px;
   margin-top: 6px;
 }
-.footer .footer-content .content-right {
+.footer .footer-content .content-right a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.footer .footer-content .content-right p {
+.footer .footer-content .content-right a p {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;

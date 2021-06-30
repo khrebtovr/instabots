@@ -64,7 +64,6 @@ header {
                     display: flex;
                     align-items: center;
                     position: absolute;
-                    // left: 40px;
                     bottom: 22px;
                     width: 14px;
                     height: 35px;
@@ -107,6 +106,10 @@ header {
                     background: rgba(255, 255, 255, 1);
                     transition-duration: .25s;
                     li {
+                        margin-bottom: 24px;
+                        &:first-child {
+                            margin-bottom: 40px;
+                        }
                         &:first-child a {
                             font-size: 24px;
                             font-weight: 500;
@@ -114,7 +117,6 @@ header {
                         }
                         .menu__item {
                             display: block;
-                            padding: 15px 45px;
                             @include heading(56px);
                             text-decoration: none;
                             transition-duration: .25s;
@@ -126,8 +128,6 @@ header {
                 }
             }
             .logo {
-                margin-left: 32px;
-                // margin-bottom: 10px;
                 a {
                     @include text(#4754EB);
                     font-weight: 500;
@@ -142,15 +142,6 @@ header {
                     a {
                         @include text($coltext);
                     }
-                }
-            }
-        }
-        .switchlan {
-            p {
-                @include text($coltext);
-                span {
-                    color: $blue;
-                    font-weight: 500;
                 }
             }
         }
@@ -713,11 +704,10 @@ header {
                 background: rgba(255, 255, 255, 0.5);
                 border-radius: 16px;
                 box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
-                // @include heading(36px);
                 cursor: pointer;
                 padding: 28px 32px;
                 width: 100%;
-                text-align: left;
+                // text-align: left;
                 border: none;
                 outline: none;
                 transition: 0.4s;
@@ -757,7 +747,7 @@ header {
         padding: 80px 32px;
         .feedback-form {
             h3 {
-                @include heading(56px);
+                @include heading(36px);
                 margin-bottom: 16px;
             }
             p {
@@ -818,10 +808,12 @@ header {
             }
         }
         .content-right {
-            display: flex;
-            p {
-                @include text(#fff);
-                margin-right: 8px;
+            a {
+                display: flex;
+                p {
+                    @include text(#fff);
+                    margin-right: 8px;
+                }
             }
         }
     }
