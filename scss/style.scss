@@ -768,9 +768,11 @@ header {
         @include flex(space-around);
         padding: 80px 32px;
         .feedback-form {
+            flex-basis: 465px;
             h3 {
                 @include heading(36px);
                 margin-bottom: 16px;
+                display: inline-block
             }
             p {
                 @include text($coltext);
@@ -778,8 +780,6 @@ header {
             form {
                 margin-top: 8px;
                 position: relative;
-                display: inline-block;
-                display: flex;
                 flex-direction: column;
                 input {
                     @include input-reset();

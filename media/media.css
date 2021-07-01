@@ -51,7 +51,7 @@
         justify-content: start !important;
     }
     .feedback-form {
-        width: 100%;
+        flex-basis: 100% !important;
     }
     .feedback-form input {
         width: 100% !important;

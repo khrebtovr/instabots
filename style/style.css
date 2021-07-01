@@ -1075,12 +1075,17 @@ header .header-content .header__user .user-icon a img {
       flex-wrap: wrap;
   padding: 80px 32px;
 }
+.feedback .feedback-content .feedback-form {
+  -ms-flex-preferred-size: 465px;
+      flex-basis: 465px;
+}
 .feedback .feedback-content .feedback-form h3 {
   font-weight: 500;
   font-size: 36px;
   line-height: 125%;
   color: #1A1A1A;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .feedback .feedback-content .feedback-form p {
   font-size: 18px;
@@ -1091,10 +1096,6 @@ header .header-content .header__user .user-icon a img {
 .feedback .feedback-content .feedback-form form {
   margin-top: 8px;
   position: relative;
-  display: inline-block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
