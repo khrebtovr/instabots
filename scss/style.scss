@@ -145,9 +145,27 @@ header {
                 }
             }
         }
-        button {
-            @include button-reset($blue);
-            @include text(#fff);
+        .header__user {
+            display: flex;
+            button {
+                @include button-reset($blue);
+                @include text(#fff);
+            }
+            .user-icon {
+                display: none;
+                a {
+                    background: $blue;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    img {
+                        margin: auto;
+                        height: 18px;
+                        width: 16px;
+                    }
+                }
+            }
         }
     }
 }
@@ -167,12 +185,14 @@ header {
                 margin-top: 40px;
                 position: relative;
                 display: inline-block;
+                max-width: 465px;
+                width: 100%;
                 input {
                     @include input-reset();
                     padding: 20px 16px;
                     background: rgba(255, 255, 255, 0.5);
                     border-radius: 16px;
-                    width: 465px;
+                    width: 100%;
                     @include text($coltext);
                 }
                 button {
@@ -646,7 +666,7 @@ header {
         position: relative;
         .sale__data {
             flex-basis: 500px;
-            h3 {
+            h4 {
                 @include heading(56px);
                 display: inline;
             }
@@ -654,12 +674,14 @@ header {
                 margin-top: 40px;
                 position: relative;
                 display: inline-block;
+                max-width: 465px;
+                width: 100%;
                 input {
                     @include input-reset();
                     padding: 20px 16px;
                     background: #F2F2F2;
                     border-radius: 16px;
-                    width: 465px;
+                    width: 100%;
                     @include text($coltext);
                 }
                 button {

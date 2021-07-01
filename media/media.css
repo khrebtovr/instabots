@@ -29,7 +29,6 @@
     }
     .info-work__image {
         width: 90% !important;
-        /* margin: auto; */
     }
     .info-work__block {
         margin-top: 40px;
@@ -58,6 +57,183 @@
         width: 100% !important;
     }
     .feedback-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .wrapper {
+        background: url(../img/phone-bg.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .container {
+        padding: 0 8px;
+    }
+    .header-content {
+        padding: 12px !important;
+    }
+    .menu__btn {
+        height: 25px !important;
+    }
+    .offer-content,
+    .info-work-content,
+    .reviews-content,
+    .sale-content,
+    .feedback-content {
+        padding: 40px 12px !important;
+    }
+    .questions-content,
+    .advantage-content,
+    .tarrifs__content {
+        padding: 40px 0 !important;
+    }
+    .footer-content {
+        padding: 20px 12px !important;
+    }
+    h1,
+    h4 {
+        font-size: 36px !important;
+    }
+    h3 {
+        font-size: 18px !important;
+        margin-left: 20px !important;
+    }
+    p,
+    input,
+    button {
+        font-size: 14px !important;
+    }
+    form {
+        width: 100% !important;
+    }
+    /* header/offer screen */
+    .logo a {
+        font-size: 14px !important;
+    }
+    .header__user button {
+        display: none;
+    }
+    .user-icon {
+        display: block !important;
+    }
+    .offer__data {
+        margin-bottom: 40px;
+    }
+    .offer__data form input {
+        padding: 18px 16px !important;
+    }
+    .offer__data button {
+        top: 8px !important;
+        padding: 10.5px 24px !important;
+    }
+    .offer__data p {
+        font-size: 12px !important;
+    }
+    .menu__item {
+        font-size: 36px !important;
+    }
+    .menu__box {
+        top: 63px !important;
+        padding: 40px 20px !important;
+    }
+    .menu__box li:first-child a {
+        font-size: 18px !important;
+    }
+    .menu__box li:first-child {
+        margin-bottom: 24px !important;
+    }
+    /* advantage screen */
+    .advantage__content {
+        margin-top: 29px !important;
+    }
+    .advantage-content .item-head img {
+        width: 36px;
+        height: 45px;
+    }
+    .advantage-content .item-head p {
+        font-size: 18px !important;
+    }
+    /* info-work screen */
+    .info-work__image {
+        width: 100% !important;
+    }
+    .info-work .info-work-content h3 {
+        margin-left: 8px !important;
+    }
+    .info-work__block .block__item p {
+        font-size: 14px !important;
+    }
+    .info-work__block .block__item p:not(:last-child) {
+        margin-right: 32px !important;
+    }
+    .info-work__block .block__item p:not(:last-child)::after {
+        width: 16px !important;
+        top: 9px !important;
+        left: 89px !important;
+    }
+    .info-work .info-work-content .info-work__content .info-work__block h4 {
+        margin-top: 24px !important;
+    }
+    .info-work .info-work-content .info-work__content .info-work__block .item-body p:first-child {
+        margin: 8px 0 16px 0 !important;
+    }
+    .info-work .info-work-content .info-work__content button {
+        margin-top: 40px;
+        width: 100%;
+    }
+    /* tarrifs screen */
+    .tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-head {
+        padding: 15px 16px !important;
+    }
+    .tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-footer {
+        padding: 40px 16px 16px;
+    }
+    .tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-footer button {
+        width: 100% !important;
+    }
+    .tarrifs .tarrifs__content .tarrifs__info .tarrifs-item .item-head p {
+        font-size: 18px !important;
+    }
+    /* reviews screen */
+    .reviews .reviews-content h3 {
+        margin-left: 8px !important;
+    }
+    /* sale screen */
+    .sale .sale-content .sale__data form input {
+        padding: 18px 16px !important;
+    }
+    .sale .sale-content .sale__data form button {
+        top: 8px !important;
+        padding: 10.5px 24px !important;
+    }
+    .sale .sale-content .sale__data p {
+        font-size: 12px !important;
+    }
+    /* questions screen */
+    .questions .questions-content .questions-accordion .accordion button {
+        font-size: 26px !important;
+    }
+    .questions .questions-content .questions-accordion .panel {
+        padding: 0 9px;
+    }
+    /* feedback screen */
+    .feedback .feedback-content .feedback-form h3 {
+        font-size: 26px !important;
+        margin-left: 8px !important;
+    }
+    .feedback .feedback-content .feedback-form form input {
+        padding: 15px 16px 14px;
+    }
+    .feedback .feedback-content .feedback-form .form-footer button {
+        padding: 14.5px 24px !important;
+    }
+    .feedback .feedback-content .feedback-form .form-footer p {
+        font-size: 12px !important;
+        margin-top: 16px;
+    }
+    .footer .footer-content .content-right a p {
         display: none;
     }
 }
