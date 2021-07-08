@@ -256,16 +256,15 @@ header {
             margin-top: 40px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 16px;
+            grid-gap: 20px;
             .advantage__item {
                 background: #FAFAFA;
-                box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+                box-shadow: 0px 0px 8px 1px rgba(128, 128, 128, 0.3);
                 border-radius: 24px;
-                border: 1px solid;
-                border-image-source: linear-gradient(243.82deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
                 .item-head {
                     @include flex(start);
-                    padding: 8px 16px;
+                    border-radius: 24px 24px 0 0;
+                    padding: 8px 24px;
                     background: rgba(255, 255, 255, 0.5);
                     p {
                         margin-left: 12px;
@@ -368,13 +367,11 @@ header {
             margin-top: 40px;
             .tarrifs-item {
                 background: #FAFAFA;
-                box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+                box-shadow: 0px 0px 8px 1px rgba(128, 128, 128, 0.3);
                 border-radius: 24px;
-                border: 1px solid;
-                border-image-source: linear-gradient(243.82deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
                 .item-head {
-                    // @include flex(start);
                     padding: 20px 24px;
+                    border-radius: 24px 24px 0 0;
                     background: rgba(255, 255, 255, 0.5);
                     p {
                         @include text($coltext);
@@ -400,6 +397,7 @@ header {
                 }
                 .item-footer {
                     padding: 24px 34px;
+                    border-radius: 0 0 24px 24px;
                     button {
                         @include button-reset(#fff);
                         padding: 16px 57.5px;
