@@ -1007,8 +1007,8 @@ header .header-content .header__user .user-icon a img {
   width: 100%;
   border: none;
   outline: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,9 +1036,24 @@ header .header-content .header__user .user-icon a img {
 .questions .questions-content .questions-accordion .accordion .active, .questions .questions-content .questions-accordion .accordion:hover {
   background: rgba(255, 255, 255, 0.7);
 }
+.questions .questions-content .questions-accordion .accordion::after {
+  content: "";
+  background: url(../img/close.svg) center center no-repeat;
+  width: 48px;
+  height: 48px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.questions .questions-content .questions-accordion .active:after {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+.questions .questions-content .questions-accordion .active {
+  border-radius: 16px 16px 0 0;
+}
 .questions .questions-content .questions-accordion .panel {
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
+  border-radius: 0 0 16px 16px;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;

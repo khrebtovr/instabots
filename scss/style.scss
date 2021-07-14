@@ -727,10 +727,9 @@ header {
                 cursor: pointer;
                 padding: 28px 32px;
                 width: 100%;
-                // text-align: left;
                 border: none;
                 outline: none;
-                transition: 0.4s;
+                transition: 0.1s;
                 display: flex;
                 justify-content: space-between;
                 button {
@@ -742,10 +741,23 @@ header {
                 &:hover {
                     background: rgba(255, 255, 255, 0.7);
                 }
+                &::after {
+                    content: '';
+                    background: url(../img/close.svg) center center no-repeat;
+                    width: 48px;
+                    height: 48px;
+                    transition: 0.2s ease-in;
+                }
+            }
+            .active:after {
+                transform: rotateZ(45deg);
+            }
+            .active {
+                border-radius: 16px 16px 0 0;
             }
             .panel {
                 background: rgba(255, 255, 255, 0.3);
-                border-radius: 16px;
+                border-radius: 0 0 16px 16px;
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.2s ease-out;
