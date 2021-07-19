@@ -1,4 +1,4 @@
-@media screen and (max-width: 1054px) {
+@media screen and (max-width: 1062px) {
     .tarrifs__info {
         justify-content: space-evenly !important;
     }
@@ -24,7 +24,7 @@
         padding: 40px 32px !important;
     }
     .offer__pic {
-        width: 80% !important;
+        width: 95% !important;
         margin: auto;
     }
     .btn__next {
