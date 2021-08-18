@@ -1,8 +1,8 @@
-@media screen and (max-width: 1062px) {
+/* @media screen and (max-width: 1062px) {
     .tarrifs__info {
         justify-content: space-evenly !important;
     }
-}
+} */
 
 @media screen and (max-width: 1024px) {
     .header {
@@ -19,6 +19,12 @@
     }
     .hamburger-menu {
         display: block !important;
+    }
+    .hamburger {
+        height: 53px !important;
+    }
+    .menu {
+        top: 80px !important;
     }
     .offer-content {
         padding: 40px 32px !important;
@@ -137,18 +143,24 @@
     .offer__data p {
         font-size: 12px !important;
     }
-    .menu__item {
+    .menuLink {
         font-size: 36px !important;
     }
-    .menu__box {
+    .hamburger {
+        height: 35px !important;
+    }
+    .menu {
         top: 63px !important;
         padding: 40px 20px !important;
     }
-    .menu__box li:first-child a {
+    .menu li:first-child a {
         font-size: 18px !important;
     }
-    .menu__box li:first-child {
+    .menu li:first-child {
         margin-bottom: 24px !important;
+    }
+    .menu li {
+        margin-bottom: 16px;
     }
     /* advantage screen */
     .advantage__content {
@@ -218,16 +230,19 @@
         font-size: 12px !important;
     }
     /* questions screen */
+    .questions-accordion .accordion {
+        padding: 15px 20px !important;
+    }
     .questions-accordion .accordion button {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
     .questions-accordion .panel {
-        padding: 0 9px;
+        padding: 0 9px !important;
     }
     /* feedback screen */
     .feedback-content .feedback-form h3 {
         font-size: 26px !important;
-        margin-left: 8px !important;
+        margin-left: 0 !important;
     }
     .feedback-form form input {
         padding: 15px 16px 14px;
