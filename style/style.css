@@ -225,8 +225,18 @@ header .header-content .header__user button {
 header .header-content .header__user .user-icon {
   display: none;
 }
-header .header-content .header__user .user-icon a {
+header .header-content .header__user .user-icon button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 12px 24px;
   background: #4754EB;
+  border-radius: 16px;
+  font-weight: 500;
+  padding: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -234,7 +244,7 @@ header .header-content .header__user .user-icon a {
   display: -ms-flexbox;
   display: flex;
 }
-header .header-content .header__user .user-icon a img {
+header .header-content .header__user .user-icon button img {
   margin: auto;
   height: 18px;
   width: 16px;
