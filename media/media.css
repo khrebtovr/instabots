@@ -41,7 +41,7 @@
         flex-basis: 100% !important;
     }
     .tarrifs__info {
-        justify-content: center !important;
+        justify-content: center;
     }
     .reviews-item {
         width: 100% !important;
